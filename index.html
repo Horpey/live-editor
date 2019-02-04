@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link type="text/css" rel="stylesheet" href="/vendor/simplemde.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+    <title>Alpha Typing</title>
+
+    <style>
+        a, div, input, button, textarea {
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            margin: 0px;
+        }
+
+        .CodeMirror {
+            /* height: 400px; */
+            height: 100vh;
+            padding: 0px;
+        }
+
+        .CodeMirror-scroll{
+            background: black;
+            color: white;
+            padding: 45px;
+        }
+
+        .sharing-link {
+            font-family: 'Poppins', sans-serif;
+            line-height: 30px;
+        }
+        .CodeMirror-line{
+            font-size: 6em!important;
+            font-weight: bold!important;
+        }
+
+        /* .editor-toolbar{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+<!-- <div class="sharing-link">
+    Use this link to open the document in a separate window or share it with friend:
+    <a id="sharing-link" href="#" target="_blank"></a>
+</div> -->
+<textarea id="text-area"></textarea>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/vendor/simplemde.min.js"></script>
+<script src="/collaborative.min.js"></script>
+<script>
+  // {{site}} token is replaced by the server with the site data during the page rendering
+  // For details, see '/document/:id?' endpoint at index.js file
+  var site = '{{site}}';
+</script>
+<script src="/setup_sharing_link.js"></script>
+<script src="/setup_collaborative.js"></script>
+<script src="/setup_text_editor.js"></script>
+</body>
+</html>
