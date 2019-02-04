@@ -1,5 +1,5 @@
 {
-  "name": "collaborative-rich-text-editor-demo",
+  "name": "Alpha Headline",
   "version": "1.0.0",
   "description": "Example of application with collaborative access to rich text using Collaborative.js and  SimpleMDE editor.",
   "main": "index.js",
